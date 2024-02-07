@@ -1,0 +1,72 @@
+
+body{
+    background-color: rgb(161, 202, 194);
+}
+img{
+width: 60%;
+height: 40%;
+display: flex;
+margin: auto;
+}
+
+.content-container {
+   background-color:white;
+border-left: 50px solid white;
+border-right: 50px solid white;
+  border-top: 35px solid white;
+  border-bottom:25px solid white; 
+padding: 10px;
+text-align: center;
+margin-left: 18%;
+margin-right: 18%;
+  margin-top: 5%;
+margin-bottom: 5%;
+}
+.p1{
+    text-align: left;
+    text-indent: 0px;
+     text-align: justify;
+text-justify: inter-word;
+
+}
+
+/* Left align text */
+.content-container p {
+text-align: left;
+text-indent: 0px;
+text-align: justify;
+text-justify: inter-word;
+
+
+}
+
+/* Center align h1 and h2 */
+h1, h2 {
+text-align: center;
+}
+h3{
+  text-align: left;
+}
+
+hr {
+    border: 0;
+    height: 3px;
+    background: black;
+    margin: 20px 0;
+  }
+  .custom-list {
+    list-style: none; /* Remove default bullets */
+    padding-left: 20px; /* Add some left padding */
+  }
+  .custom-list li {
+    position: relative; /* Position relative for absolute positioning of custom bullet */
+    margin-bottom: 0.5em; /* Add some space between list items */
+  }
+  .custom-list li::before {
+    content: counter(list-item, lower-alpha) '. '; 
+    color: black; /* Custom bullet color */
+    font-size: 1em; /* Custom bullet size */
+    position: absolute; /* Position the bullet absolutely */
+    left: -20px; /* Adjust the position to align with text */
+    top: 0em; /* Align bullet vertically with text */
+  }
